@@ -1,0 +1,199 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+a,a:hover,a:active{
+	text-decoration:none;
+	outline:none;
+}
+
+body{
+	background:url(../image/bg.png) repeat;
+	font-size:13px;
+	color:#999;
+}
+
+.w1000{
+	width:1000px;
+	height:auto;
+	margin:30px auto;
+}
+
+/* 头部 */
+.header{
+	width:220px;
+	height:auto;
+	float:left;
+}
+
+.header>img{
+	width:220px;
+	height:220px;
+	border-radius:5px 5px 0 0;
+}
+
+.header>article{
+	background:#558e6a;
+	text-align:center;
+	line-height:30px;
+	margin-top:-5px;
+	padding:10px 0;
+	border-radius:0 0 5px 5px;
+}
+
+.header>article h1{
+	color:#fff;
+}
+
+.header>article h2{
+	color:#fff;
+	font-size:0.9em;
+	font-weight:normal;
+}
+
+/* 导航 */
+.nav li{
+	width:215px;
+	height:40px;
+	margin-top:5px;
+	border-right:5px solid #e3e2e2;
+	border-radius:5px;
+	background:#fff;
+	background:-webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+}
+
+.nav li>a{
+	display:inline-block;
+	width:80px;
+	height:20px;
+	padding:10px 10px 10px 130px;
+	color:#787878;
+	font-size:17px;
+}
+
+.nav li>a:hover{
+	color:#558e6a;
+}
+
+.nav li.active{
+	border-right:5px solid #558e6a;
+	background:#fff url(../image/nav-arrow-active.png) no-repeat 102% center;
+}
+
+.nav li>a.tab-about{
+	background:url(../image/about-ico.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-portfolio{
+	background:url(../image/folio-ico.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-blog{
+	background:url(../image/blog-ico.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-contact{
+	background:url(../image/contact-ico.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-about:hover, li.active>a.tab-about{
+	background:url(../image/about-ico-active.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-portfolio:hover, li.active>a.tab-portfolio{
+	background:url(../image/folio-ico-active.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-blog:hover, li.active>a.tab-blog{
+	background:url(../image/blog-ico-active.png) no-repeat 15px 8px;
+}
+
+.nav li>a.tab-contact:hover, li.active>a.tab-contact{
+	background:url(../image/contact-ico-active.png) no-repeat 15px 8px;
+}
+
+/* 内容 */
+.container {
+	float: right;
+	width: 700px;
+	height: auto;
+	padding: 20px 30px 30px;
+	border: 3px solid #e3e2e2;
+	border-left: none;
+	border-radius: 5px;
+	background: #fff;
+	background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+}
+
+.container section:not(:last-child){
+	padding-bottom:20px;
+	border-bottom: 1px dotted #e3e2e2;
+}
+
+.container h3{
+	font-size:18px;
+	font-weight:normal;
+	color:#558e6a;
+	line-height: 30px;
+	margin-top:10px;
+}
+
+.container p{
+	line-height:20px;
+}
+
+.about .me{
+	height:250px;
+}
+
+.about .me ul{
+	margin-top:20px;
+}
+
+.about .me li{
+	width:250px;
+	height:25px;
+	float:left;
+	margin-bottom:10px;
+	padding:10px 0 0 10px;
+	border-radius:3px;
+	border-left:3px solid #cccccc;
+	background:#efefef;
+	line-height:18px;
+}
+
+.about .me li:nth-child(2n+1){
+	margin-right:90px;
+}
+
+.about .skills{
+	_height:120px;
+	min-height:120px;
+}
+
+.about .skills>div{
+	width:50%;
+	float:left;
+
+}
+
+.about .skills ul{
+
+}
+
+.about .skills li{
+	padding:5px 0;
+}
+
+/* 底部 */
+.footer{
+	width:1000px;
+	height:80px;
+	clear:both;
+	text-align:center;
+	padding-top: 30px;
+}
