@@ -32,3 +32,16 @@
 	content: "\e947";
 	font-size: 12px;
 }
+.icon-chevron-up:before{
+	content:"\e601";
+	font-size:30px;
+	padding:12px 15px;
+	color:#fff;
+	background:#000;
+	border-radius:3px;
+	filter:opacity(0.8);
+	-webkit-filter:opacity(0.8);
+	position:fixed;
+	right:250px;
+	bottom:17px;
+}

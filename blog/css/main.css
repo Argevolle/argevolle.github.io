@@ -117,17 +117,19 @@ body{
 /* 个人信息 */
 .outer .profile{
 	width:220px;
-	padding:10px 0;
+	padding-top:10px;
 	text-align:center;
 	line-height:20px;
 	background:#fff;
 	box-shadow:1px 1px 2px rgba(0,0,0,0.05);
+	float:left;
 }
 .profile > img{
 	width:200px;
 	height:200px;
 }
 .profile .name{
+	font-size:150%;
 	color:#565a5f;
 	line-height:30px;
 }
@@ -141,24 +143,87 @@ body{
 }
 .profile .contact-list{
 	width:150px;
-	height:40px;
+	height:50px;
 	padding:0 35px;
 	margin-top:10px;
 	border-top:1px solid #eceff2;
 }
 .profile .contact-list li{
 	display:inline-block;
-	padding:10px 15px;
+	padding:15px 15px;
 	font-size:20px;
 	float:left;
 }
 
+/* 正文 */
+.outer .content{
+	width:650px;
+	float:left;
+	margin:0 20px 0 20px;
+}
+.content .article{
+	margin-bottom:40px;
+	box-shadow:1px 1px 2px rgba(0,0,0,0.05);
+}
+.article .article-banner{
+	width:650px;
+	height:250px;
+}
+.article .article-word{
+	width:620px;
+	padding:0 15px;
+	overflow:hidden;
+	background:#fff;
+}
+.article .article-title{
+	margin:10px 0;
+	font-size:200%;
+	color:#565a5f;
+	line-height:50px;
+	max-height:50px;
+}
+.article-date, .article-tag{
+	padding-right:20px;
+	color:#999;
+}
+.article .article-entry{
+	line-height:20px;
+	margin:15px 0;
+	color:#565a5f;
+}
+.article .article-more>a{
+	display:inline-block;
+	padding:10px 25px;
+	background:#f5f8f9;
+	border-radius:25px;
+	color:#999;
+}
+.article .article-more>a:hover{
+	background:#38b7ea;
+	color:#fff;
+}
+.article .article-operate{
+	height:50px;
+	margin-top:20px;
+	padding-left:490px;
+	border-top:1px solid #eceff2;
+}
+.article .article-operate a{
+	display:inline-block;
+	padding:17px 10px;
+}
+.article .article-operate a>i{
+	padding-right:4px;
+}
 
 /* 底部 */
 .footer{
-	width:1000px;
-	height:80px;
+	height:0px;
 	clear:both;
 	text-align:center;
-	padding-top: 30px;
+	padding: 30px 0 40px;
+	border-top:1px solid #eceff2;
+}
+.footer a{
+	color:#38b7ea;
 }
