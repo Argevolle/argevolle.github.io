@@ -216,6 +216,57 @@ body{
 	padding-right:4px;
 }
 
+/* 推荐 */
+.outer .sidebar{
+	width:290px;
+	float:right;
+}
+.sidebar .widget-wrap{
+	margin-bottom:50px;
+}
+.sidebar .recents, .categories{
+	width:100%;
+	padding-left:5px;
+}
+.recents li{
+	display:list-item;
+	padding:20px 0;
+}
+.recents li a{
+	display:inline-block;
+}
+.recents li img{
+	width:90px;
+	height:90px;
+}
+.recents .recents-categories{
+	width:185px;
+	margin:-85px 0 0 105px;
+	font-size:1.1em;
+	color:#38b7ea;
+}
+.recents .recents-title{
+	width:185px;
+	margin:5px 0 0 105px;
+	line-height:20px;
+	font-size:1.0em;
+}
+.recents time{
+	position:relative;
+	top:8px;
+	left:105px;
+}
+.categories{
+	padding:10px 10px;
+}
+.categories li{
+	display:list-item;
+	line-height:40px;
+}
+.categories li a:before{
+	color:#ccc;
+}
+
 /* 底部 */
 .footer{
 	height:0px;
@@ -223,6 +274,18 @@ body{
 	text-align:center;
 	padding: 30px 0 40px;
 	border-top:1px solid #eceff2;
+}
+.footer .goTop{
+	padding:12px 15px 15px;
+	color:#fff;
+	background:#000;
+	border-radius:3px;
+	filter:opacity(0.8);
+	-webkit-filter:opacity(0.8);
+	position:fixed;
+	right:259px;
+	bottom:17px;
+	cursor:pointer;
 }
 .footer a{
 	color:#38b7ea;

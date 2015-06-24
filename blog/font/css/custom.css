@@ -34,14 +34,9 @@
 }
 .icon-chevron-up:before{
 	content:"\e601";
-	font-size:30px;
-	padding:12px 15px;
-	color:#fff;
-	background:#000;
-	border-radius:3px;
-	filter:opacity(0.8);
-	-webkit-filter:opacity(0.8);
-	position:fixed;
-	right:250px;
-	bottom:17px;
+	font-size:2.0em;
+}
+.icon-arrow:before{
+	content:"\ea1c";
+	font-size:.1em;
 }
