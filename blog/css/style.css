@@ -108,12 +108,12 @@ button::-moz-focus-inner {
 html,
 body,
 #container {
-	height: 100%;
+	height: auto;
 }
 body {
 	color: #565a5f;
 	background: #f5f8f9;
-	font: 13px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+	font: 13px OpenSans, "Microsoft Yahei", Arial, sans-serif;
 }
 a,
 a:visited {
@@ -150,6 +150,7 @@ a:hover {
 	padding: 23px 15px;
 	float: left;
 	font-size: 1.1em;
+	font-weight: bold;
 }
 #search-wrap {
 	float: right;
@@ -207,14 +208,13 @@ a:hover {
 /* 文章 */
 #content {
 	width: 55%;
-	margin-right: 3%;
+	margin-right: 2%;
 	float:left;
 }
 /* 右侧边栏 */
 #sidebar {
-	width: 2070
+	width: 21%;
 	float:left;
-	background: black;
 }
 @media screen and (min-width: 800px) and (max-width: 1200px) {
 	#profile {
@@ -243,7 +243,7 @@ a:hover {
 
 /* 基本信息 */
 #profile .inner {
-	margin-top: 40px;
+	margin-top: 3em;
 	background: #fff;
 }
 #profile .base-info {
@@ -289,7 +289,7 @@ a:hover {
 
 /* 博客正文 */
 #content .article {
-	margin: 40px 0;
+	margin: 3em 0;
 }
 .article-inner {
 	overflow: hidden;
@@ -387,10 +387,86 @@ a:hover {
 .article-footer a:hover {
 	color: #565a5f;
 }
+#sidebar .recents {
+	margin-top: 3em;
+}
+.recents .recents-title {
+	font-weight: normal;
+
+}
+.recents ul {
+	margin: 1.5em 0 0 .5em;
+}
+.recents .recents-item {
+	width: 100%;
+	float: left;
+}
+.recents-item .item-inner {
+	position: relative;
+	min-height: 105px;
+}
+.recents-item .item-category {
+	padding-left: 7em;
+	line-height: 1.8em;
+	color: #38b7ea;
+}
+.recents-item .item-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.recents-item .item-link {
+	display: inline-block;
+}
+.recents-item .item-pic {
+	width: 6em;
+	height: 6em;
+	float: left;
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+.recents-item .item-link:hover .item-pic {
+	opacity: 0.8;
+}
+.recents-item .item-title {
+	display: inline-block;
+	margin-left: 7em;
+	line-height: 1.6em;
+	margin-top: -4.2em;
+	float: left;
+	max-height: 3.2em;
+	overflow: hidden;
+}
+.recents-item .item-time {
+	display: block;
+	margin: -1.4em 0 0 7em;
+	color: #999;
+}
+#toTop {
+	position: fixed;
+	right: 2%;
+	bottom: 20px;
+	padding: .9em 1.3em 1.3em;
+	background: #000;
+	opacity: 0.8;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
 
 .footer {
 	width: 100%;
 	height: 20%;
 	float:left;
 	background: #f5f8f9;
+}
+/* 底部 */
+.footer{
+	clear:both;
+	text-align:center;
+	padding: 30px 0;
+	border-top:1px solid #eceff2;
+}
+.footer a{
+	color:#38b7ea;
 }
