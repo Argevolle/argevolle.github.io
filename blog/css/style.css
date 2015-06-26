@@ -130,7 +130,8 @@ a:hover {
 	float:left;
 	background: white;
 }
-#logo {
+#logo,
+#face {
 	display: inline-block;
 	float: left;
 	padding: 10px 10px;
@@ -140,6 +141,14 @@ a:hover {
 	width: 40px;
 	height: 40px;
 	background: url(../image/logo.png) no-repeat;
+	background-size: cover;
+}
+#face .face {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url(../image/anime.jpg) no-repeat;
 	background-size: cover;
 }
 #nav {
@@ -216,10 +225,27 @@ a:hover {
 	width: 21%;
 	float:left;
 }
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+@media screen and (min-width: 1025px) {
+	#logo {
+		display: block;
+	}
+	#face {
+		display: none;
+	}
+}
+@media screen and (max-width: 1024px) {
+	#logo {
+		display: none;
+	}
+	#face {
+		display: block;
+	}
 	#profile {
 		display: none;
 	}
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
 	#content {
 		display: block;
 		width: 70%;
@@ -229,15 +255,18 @@ a:hover {
 		width: 27%;
 	}
 }
-@media screen and (max-width: 799px) {
-	#profile {
+@media screen and (max-width: 414px) {
+	#search-wrap {
 		display: none;
-	}
-	#content {
-		width: 100%;
 	}
 	#sidebar {
 		display: none;
+	}
+	.outer {
+		padding: 0;
+	}
+	#content {
+		width: 100%;
 	}
 }
 
@@ -286,6 +315,13 @@ a:hover {
 #profile .contact-list a:hover {
 	color: #38b7ea;
 }
+#profile .contact-code {
+	display: none;
+}
+#profile .contact-code img {
+	width: 200px;
+	height: 200px;
+}
 
 /* 博客正文 */
 #content .article {
@@ -300,7 +336,7 @@ a:hover {
 	height: auto;
 }
 .article-inner .article-header {
-	padding: 2em 2em 1em;
+	padding: 1em 2em;
 }
 .article-header .article-title {
 	font-size: 1.7em;
