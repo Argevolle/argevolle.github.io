@@ -1,0 +1,64 @@
+/**
+ * CSS Global Style
+ * @author: Argevolle;
+ * @data: 2015-06-30;
+ */
+@charset "utf-8";
+
+/**
+ * 初始化浏览器默认样式
+ */
+html,body,div,ol,ul,dl,dt,dd,h1,h2,h3,h4,h5,h6,input,button,textarea,p,span,form,table,thead,tbody,tfoot,th,tr,td{ margin:0;padding:0; }
+body,input,button,select,textarea{ font:12px/1.5 OpenSans, "Microsoft Yahei", Arial, sans-serif; }
+table{ border-collapse:collapse;border-spacing:0; }
+img,a img{ border:none; }
+ul,ol{ list-style:none; }
+a{ color:#2f2f2f;outline:none;text-decoration:none; }
+a:hover{ color:#e15d5d; }
+/* 去除 IE 默认发光边框 */
+a:active{ star:expression(this.onFocus=this.blur()); }
+/* 去除浏览器默认发光边框 */
+:focus{ outline:none; }
+/* 英文字符自动换行 */
+p{ word-break:break-all; }
+/* 去除 IE10+ 文本框自带的清除按钮 */
+input::-ms-clear{ display:none; }
+/* 禁止多行文本框拖拽 */
+textarea{ resize:none; }
+
+/**
+ * 全局通用样式
+ */
+
+/* 子元素浮动导致父元素无法自适应高度 */
+.cls:after{ content:"";display:block;clear:both; }
+.cls{ zoom:1; }
+
+/* 浮动 */
+.l{ float:left !important; }
+.r{ float:right !important; }
+
+/* 鼠标样式 */
+.cur-poi{ cursor:pointer; }
+
+/* 显示/隐藏 */
+.show{ display:block !important; }
+.hide{ display:none !important; }
+
+/* 定位 */
+.pos-rel{ position:relative; }
+.pos-abs{ position:absolute; }
+
+/* 字号 */
+.f12{ font: 12px; }
+.f13{ font: 13px; }
+
+
+
+
+
+
+
+
+
+

@@ -148,6 +148,7 @@ a:hover {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
 	background: url(../image/anime.jpg) no-repeat;
 	background-size: cover;
 }
@@ -175,16 +176,16 @@ a:hover {
     padding:0 10px;
     line-height:40px;
     border-radius:25px;
+    -webkit-border-radius:25px;
     border:1px solid #eceff2;
-    font:normal 13px 'FontAwesome';
+    font:normal 13px OpenSans;
     outline: none;
-    -webkit-transition: width .5s;
-    -moz-transition: width .5s;
-    -o-transition: width .5s;
     transition: width .5s;
 }
 #search-wrap .search-form-input:focus {
 	border:1px solid #38b7ea;
+    -webkit-box-shadow:0px 0px 5px #38b7ea;
+    -moz-box-shadow:0px 0px 5px #38b7ea;;
     box-shadow:0px 0px 5px #38b7ea;
     width: 200px;
 }
@@ -394,6 +395,7 @@ a:hover {
 .article-body .article-more a{
 	padding: .7em 2em;
 	background: #f5f8f9;
+	-webkit-border-radius: 1.5em;
 	border-radius: 1.5em;
 	color: #999;
 }
@@ -459,6 +461,9 @@ a:hover {
 	height: 6em;
 	float: left;
 	opacity: 1;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 .recents-item .item-link:hover .item-pic {
@@ -478,13 +483,14 @@ a:hover {
 	margin: -1.4em 0 0 7em;
 	color: #999;
 }
-#toTop {
+#to-top {
 	position: fixed;
 	right: 2%;
 	bottom: 20px;
 	padding: .9em 1.3em 1.3em;
 	background: #000;
 	opacity: 0.8;
+	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	color: #fff;
 	cursor: pointer;
