@@ -50,8 +50,8 @@ textarea{ resize:none; }
 .pos-abs{ position:absolute; }
 
 /* 字号 */
-.f12{ font: 12px; }
-.f13{ font: 13px; }
+.f12{ font-size: 12px; }
+.f13{ font-size: 13px; }
 
 
 
