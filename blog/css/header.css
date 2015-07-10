@@ -49,6 +49,12 @@
     height: 52px;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    background: #fff;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
 }
 
 .navigation .container {
@@ -219,7 +225,7 @@
 }
 
 /* 分享 */
-.share {
+.share-box {
     position: absolute;
     top: 50%;
     right: 60px;
@@ -230,16 +236,18 @@
     transform: translateY(-50%);
 }
 
-.share a {
+.share-box a {
     display: inline-block;
     margin: 0 5px;
 }
 
 /* 搜索 */
-.search {
+.search-box {
     position: absolute;
     top: 50%;
     right: 0;
+    height: 100%;
+    line-height: 50px;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -247,18 +255,53 @@
     transform: translateY(-50%);
 }
 
-.search .icon-search {
+.search-box .search-form {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.search-box .search-form .search-submit {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 30px 0 15px;
+    width: 200px;
+    border: 1px solid #9f9f9f;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08) inset;
+    -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08) inset;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08) inset;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-box:hover .search-form .search-submit {
+    opacity: 1;
+    visibility: visible;
+    width: 200px;
+}
+
+.search-box .search-form .search-submit:focus {
+    opacity: 1;
+    visibility: visible;
+    width: 200px;
+}
+
+.search-box .icon-search {
     display: inline-block;
     padding: 0 18px;
     background: linear-gradient(to bottom, #cdcdcd, #383838, #cdcdcd) no-repeat left/1px 15px;
 }
 
-.search .search-submit {
-    display: none;
-}
-
 .navigation .fa {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* 轮播图 */
@@ -348,6 +391,28 @@
     font-size: 0.9em;
 }
 
-.owl-controls .owl-prev {
-    border-radius: 0;
+.owl-controls .owl-buttons > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3em;
+    height: 3em;
+    margin: auto;
+    text-align: center;
+    background: #f7f9f9;
+    opacity: 0.5;
+}
+
+.owl-controls .owl-buttons a {
+    display: block;
+    line-height: 3em;
+}
+
+.owl-controls .owl-buttons .owl-next {
+    right: 0;
+}
+
+.owl-carousel:hover .owl-prev,
+.owl-carousel:hover .owl-next {
+    opacity: 1;
 }
